@@ -18,6 +18,7 @@ export const get = async (req, res) => {
       }
     `
     const { posts } = await client.request(query)
+    
     return {
       status: 200,
       body: { posts },
