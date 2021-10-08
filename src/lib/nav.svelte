@@ -13,6 +13,7 @@
   <div class="hidden px-2 mx-2 navbar-center lg:flex">
     <div class="flex items-stretch">
       <a href="/" class="btn btn-ghost btn-sm rounded-btn"> Home </a>
+
       {#each pages as { title, slug }}
         <a
           sveltekit:prefetch
@@ -20,6 +21,10 @@
           class="btn btn-ghost btn-sm rounded-btn">{title}</a
         >
       {/each}
+
+      <a href="/add-post" class="btn btn-ghost btn-sm rounded-btn">
+        Add a Post
+      </a>
     </div>
   </div>
   <div class="navbar-end">

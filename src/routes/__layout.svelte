@@ -1,10 +1,13 @@
 <script context="module">
-  export const load = async ({ fetch }) => {
+  export const load = async ({ fetch, page }) => {
     const res = await fetch('/pages.json')
     if (res.ok) {
       const pages = await res.json()
       return {
-        props: pages,
+        props: {
+          pages,
+          key: page.path,
+        },
       }
     }
   }
@@ -12,6 +15,7 @@
 
 <script>
   import Nav from '$lib/nav.svelte'
+  import PageTransition from '$lib/page-transition.svelte'
   import { onMount } from 'svelte'
   import { themeChange } from 'theme-change'
   import '../app.css'
@@ -21,9 +25,12 @@
   })
 
   export let pages
+  export let key
 </script>
 
 <Nav {pages} />
 <main class="container max-w-xl mx-auto px-4">
-  <slot />
+  <PageTransition refresh={key}>
+    <slot />
+  </PageTransition>
 </main>
