@@ -12,19 +12,29 @@
 </script>
 
 <script>
+  import marked from 'marked'
+
   export let post
 </script>
 
 <svelte:head>
-  <title>Jamstack Conf Blog | {post.slug}</title>
+  <title>{post.title}</title>
 </svelte:head>
 
 {#if post.coverImage?.url}
   <div class="sm:-mx-5 md:-mx-10 lg:-mx-20 xl:-mx-38 mb-5">
     <img
       class="rounded-lg"
-      src={post.coverImage?.url}
+      src={post.coverImage.url}
       alt={`Cover Image for ${post.title}`}
+    />
+  </div>
+{:else}
+  <div class="sm:-mx-5 md:-mx-10 lg:-mx-20 xl:-mx-38 mb-5">
+    <img
+      class="rounded-xl"
+      src={`/default-cover-image.jpg`}
+      alt={`Default Cover Image`}
     />
   </div>
 {/if}
@@ -66,6 +76,6 @@
   </div>
 </div>
 
-<article class='prose' >
-  {@html post.content.html}
+<article class="prose">
+  {@html marked(post.markdownContent)}
 </article>

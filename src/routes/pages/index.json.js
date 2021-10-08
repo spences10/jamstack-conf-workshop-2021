@@ -17,7 +17,7 @@ export const get = async (req, res) => {
     const { pages } = await client.request(query)
     return {
       status: 200,
-      body: { pages },
+      body: pages,
     }
   } catch (error) {
     return {

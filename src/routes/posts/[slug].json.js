@@ -23,9 +23,7 @@ export const get = async req => {
               )
             }
           }
-          content {
-            html
-          }
+          markdownContent
           coverImage {
             url
           }
