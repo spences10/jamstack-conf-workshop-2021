@@ -21,7 +21,7 @@
       {#each pages as { title, slug }}
         <a
           sveltekit:prefetch
-          href={slug}
+          href={`/${slug}`}
           class="rounded-btn btn btn-ghost btn-sm">{title}</a
         >
       {/each}
@@ -36,7 +36,7 @@
       {#each pages as { title, slug }}
         <a
           sveltekit:prefetch
-          href={slug}
+          href={`/${slug}`}
           class="rounded-btn btn btn-ghost btn-sm">{title}</a
         >
       {/each}
