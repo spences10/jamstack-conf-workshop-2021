@@ -17,7 +17,7 @@
     "cssnano": "5.0.8",
     "daisyui": "1.16.1",
     "env-cmd": "10.1.0",
-    "graphql": "16.0.0",
+    "graphql": "16.0.1",
     "graphql-request": "3.6.1",
     "marked": "3.0.8",
     "postcss": "8.3.11",
