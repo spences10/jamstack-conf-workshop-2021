@@ -15,7 +15,7 @@ specifiers:
   postcss-load-config: 3.1.0
   prettier: 2.4.1
   prettier-plugin-svelte: 2.4.0
-  slugify: 1.6.1
+  slugify: 1.6.2
   svelte: 3.44.1
   svelte-preprocess: 4.9.8
   tailwindcss: 2.2.19
@@ -36,7 +36,7 @@ devDependencies:
   postcss-load-config: 3.1.0
   prettier: 2.4.1
   prettier-plugin-svelte: 2.4.0_prettier@2.4.1+svelte@3.44.1
-  slugify: 1.6.1
+  slugify: 1.6.2
   svelte: 3.44.1
   svelte-preprocess: 4.9.8_12c78e77d52b6508fc8705d47f1a4eb4
   tailwindcss: 2.2.19_0c54bdadaf9d9c9c6c134cb2c6c061a3
@@ -1812,8 +1812,8 @@ packages:
       is-arrayish: 0.3.2
     dev: true
 
-  /slugify/1.6.1:
-    resolution: {integrity: sha512-5ofqMTbetNhxlzjYYLBaZFQd6oiTuSkQlyfPEFIMwgUABlZQ0hbk5xIV9Ydd5jghWeRoO7GkiJliUvTpLOjNRA==}
+  /slugify/1.6.2:
+    resolution: {integrity: sha512-XMtI8qD84LwCpthLMBHlIhcrj10cgA+U/Ot8G6FD6uFuWZtMfKK75JO7l81nzpFJsPlsW6LT+VKqWQJW3+6New==}
     engines: {node: '>=8.0.0'}
     dev: true
 
