@@ -12,7 +12,7 @@
 </script>
 
 <script>
-  import marked from 'marked'
+  import { marked } from 'marked'
 
   export let post
 </script>
