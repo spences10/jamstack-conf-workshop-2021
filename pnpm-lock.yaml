@@ -17,7 +17,7 @@ specifiers:
   prettier-plugin-svelte: 2.5.1
   slugify: 1.6.3
   svelte: 3.44.2
-  svelte-preprocess: 4.9.8
+  svelte-preprocess: 4.10.0
   tailwindcss: 2.2.19
   theme-change: 2.0.2
 
@@ -38,7 +38,7 @@ devDependencies:
   prettier-plugin-svelte: 2.5.1_prettier@2.5.1+svelte@3.44.2
   slugify: 1.6.3
   svelte: 3.44.2
-  svelte-preprocess: 4.9.8_4d00e6e9f7f5e449d97e7d1c5d5a9a9b
+  svelte-preprocess: 4.10.0_4d00e6e9f7f5e449d97e7d1c5d5a9a9b
   tailwindcss: 2.2.19_6b4e3d148bdcb715d5f821ed0a9c268b
   theme-change: 2.0.2
 
@@ -1877,8 +1877,8 @@ packages:
       svelte: 3.44.2
     dev: true
 
-  /svelte-preprocess/4.9.8_4d00e6e9f7f5e449d97e7d1c5d5a9a9b:
-    resolution: {integrity: sha512-EQS/oRZzMtYdAprppZxY3HcysKh11w54MgA63ybtL+TAZ4hVqYOnhw41JVJjWN9dhPnNjjLzvbZ2tMhTsla1Og==}
+  /svelte-preprocess/4.10.0_4d00e6e9f7f5e449d97e7d1c5d5a9a9b:
+    resolution: {integrity: sha512-uZgGyC4SwkFoby2ceiMgGYs4qHYGz2fT06cAsHO8FHdDbvj1dKQyQ/fD9OB0KLymVv0fmzuJo/On7Kv7AeVhWA==}
     engines: {node: '>= 9.11.2'}
     requiresBuild: true
     peerDependencies:
@@ -1893,7 +1893,7 @@ packages:
       stylus: ^0.54.7
       sugarss: ^2.0.0
       svelte: ^3.23.0
-      typescript: ^3.9.5 || ^4.0.0
+      typescript: ^4.5.2
     peerDependenciesMeta:
       '@babel/core':
         optional: true
